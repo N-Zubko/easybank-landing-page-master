@@ -1,0 +1,101 @@
+// Global Variables
+$font-family: 'Public Sans', sans-serif;
+$base-font-size: 18px;
+
+// Breakpoints
+$mobile: 375px;
+$tablet: 768px;
+$tablet-lg:992px;
+$desktop: 1440px;
+
+// Spacing Variables
+$space-xs: 0.5rem;   // Extra small space
+$space-sm: 1rem;     // Small space
+$space-md: 2rem;     // Medium space
+$space-lg: 3rem;     // Large space
+$space-xl: 4rem;     // Extra large space
+$space-xxl: 6rem;    // Extra extra large space
+
+// Font Size Variables
+$font-size-xs: 1rem;      // Extra small font size (18px)
+$font-size-sm: 1.125rem;  // Small font size (20.25px)
+$font-size-md: 1.25rem;   // Medium font size (22.5px)
+$font-size-lg: 1.5rem;    // Large font size (27px)
+$font-size-xl: 2rem;      // Extra large font size (36px)
+$font-size-xxl: 2.5rem;   // Extra extra large font size (45px)
+
+// Media Query for Mobile (375px)
+@media screen and (max-width: $mobile) {
+  body {
+    font-size: 16px;
+  }
+
+  // Adjust heading sizes for mobile view
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+// Media Query for Desktop (1440px)
+@media screen and (min-width: $desktop) {
+  body {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+// Grid
+$grid-columns: 12;
+$gutter-width: 16px;
+
+// Grid Container
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Row Definition
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -$gutter-width / 2;
+  margin-right: -$gutter-width / 2;
+}
+
+// Column Definition
+.col {
+  flex: 0 0 auto;
+  padding-left: $gutter-width / 2;
+  padding-right: $gutter-width / 2;
+}
+
+// Create the columns for the grid (12 columns in total)
+@for $i from 1 through $grid-columns {
+  .col-#{$i} {
+    width: (100% / $grid-columns) * $i;
+  }
+}

@@ -1,0 +1,49 @@
+// Up mixin (min-width
+@mixin up($breakpoint) {
+    @media (min-width: $breakpoint) {
+      @content;
+    }
+  }
+  
+  // Down mixin (max-width)
+  @mixin down($breakpoint) {
+    @media (max-width: $breakpoint) {
+      @content;
+    }
+  }
+  
+  // Mobile
+  @mixin mobile {
+    @media (max-width: $mobile) {
+      @content;
+    }
+  }
+  
+  // Tablet
+  @mixin tablet {
+    @media (min-width: $tablet) {
+      @content;
+    }
+  }
+
+    // Tablet LG
+    @mixin tablet-lg {
+        @media (min-width: $tablet-lg) {
+          @content;
+        }
+      }
+  
+  // Desktop
+  @mixin desktop {
+    @media (min-width: $desktop) {
+      @content;
+    }
+  }
+  
+  // Between range, e.g. between mobile and tablet)
+  @mixin between($min-width, $max-width) {
+    @media (min-width: $min-width) and (max-width: $max-width) {
+      @content;
+    }
+  }
+  

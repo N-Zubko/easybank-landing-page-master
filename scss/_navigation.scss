@@ -1,0 +1,38 @@
+nav {
+    background-color: $white;
+    padding-top: $space-sm;
+    padding-bottom: $space-sm;
+
+    .container-xxl {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    ul,
+    .btn {
+        display: none;
+
+        @include tablet-lg {
+            display: flex;
+        }
+    }
+
+    ul {
+        gap: $space-md;
+        list-style: none;
+
+        li {
+            a {
+                color: $blue-grey;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .hamburger-menu {
+        @include tablet-lg {
+            display: none;
+        }
+    }
+}

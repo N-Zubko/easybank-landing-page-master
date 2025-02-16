@@ -1,0 +1,16 @@
+// Body styles
+body {
+    font-family: $font-family;
+    font-size: $base-font-size;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .container-xxl {
+    max-width: 1350px;
+    padding-left: $space-md;
+    padding-right: $space-md;
+  }

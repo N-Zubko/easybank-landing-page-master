@@ -1,0 +1,15 @@
+// Primary
+
+$blue-dark:                    hsl(233, 26%, 24%);
+$green:                        hsl(136, 65%, 51%);
+$cyan:                         hsl(192, 70%, 51%);
+
+// Neutral
+
+$blue-grey:                    hsl(233, 8%, 62%);
+$blue-grey-light:              hsl(220, 16%, 96%);
+$grey-lightest:                hsl(0, 0%, 98%);
+$white:                        hsl(0, 0%, 100%);
+
+$gradient:                      linear-gradient(45deg, $green, $cyan);
+$gradient-light:                linear-gradient(60deg, lighten($green, 5%), lighten($cyan, 5%));
