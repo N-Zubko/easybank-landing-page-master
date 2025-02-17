@@ -69,4 +69,19 @@
       }
     }
   }
+
+  .btn-top-nav {
+        color: $blue-grey;
+        text-decoration: none;
+
+        &:hover,
+        &:active {
+            text-decoration: solid;
+            text-decoration-line: underline;
+            text-decoration-thickness: 4px;
+            text-decoration-color: $green;
+            text-underline-offset: $space-md;
+        }
+    
+  }
   
