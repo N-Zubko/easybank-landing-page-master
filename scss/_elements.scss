@@ -1,12 +1,14 @@
+// Buttons
+
 .btn-md {
-    font-size: $font-size-md;
-    padding: $space-sm $space-md;
+    font-size: $font-size-sm;
+    padding: $space-xs $space-md;
 
 }
 
 .btn-lg {
-    font-size: $font-size-lg;
-    padding: $space-md $space-lg;
+    font-size: $font-size-md;
+    padding: $space-sm $space-lg;
 
 }
 
@@ -27,6 +29,21 @@
     }
 }
 
+.btn-top-nav {
+    color: $blue-grey-dark;
+    text-decoration: none;
+
+    &:hover,
+    &:active {
+        text-decoration: solid;
+        text-decoration-line: underline;
+        text-decoration-thickness: 4px;
+        text-decoration-color: $green;
+        text-underline-offset: $space-md;
+    }
+
+}
+
 // Hamburger button styling
 .hamburger-menu {
     display: flex;
@@ -40,48 +57,59 @@
     cursor: pointer;
     z-index: 100;
     transition: transform 0.3s ease;
-    
+
     .bar {
-      width: 100%;
-      height: 2px;
-      background-color: $blue-grey;
-      transition: all 0.3s ease;
+        width: 100%;
+        height: 2px;
+        background-color: $blue-grey;
+        transition: all 0.3s ease;
     }
-    
+
     &:focus {
-      outline: none;
+        outline: none;
     }
-    
+
     // Active state for hamburger
     &.active {
-      transform: rotate(90deg);
-      
-      .bar:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
-      }
-      
-      .bar:nth-child(2) {
-        opacity: 0;
-      }
-      
-      .bar:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -5px);
-      }
-    }
-  }
+        transform: rotate(90deg);
 
-  .btn-top-nav {
-        color: $blue-grey;
-        text-decoration: none;
-
-        &:hover,
-        &:active {
-            text-decoration: solid;
-            text-decoration-line: underline;
-            text-decoration-thickness: 4px;
-            text-decoration-color: $green;
-            text-underline-offset: $space-md;
+        .bar:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
         }
-    
-  }
-  
+
+        .bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        .bar:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+    }
+}
+
+
+// Cards
+
+.cards-container {
+    .card {
+        .card-inner {
+            .card-media {
+                img {
+                    width: 100%;
+                }
+            }
+            .card-content {
+                .card-pretitle {
+
+                }
+
+                h3 {
+
+                }
+                .card-text {
+
+                }
+            }
+        }
+    }
+}
