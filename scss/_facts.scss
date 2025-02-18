@@ -1,0 +1,30 @@
+.facts {
+    background-color: $blue-grey-light;
+    padding: $space-xxl 0;
+
+    .subtitle {
+        margin: $space-sm 0;
+        max-width: 60%;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: $space-sm;
+        margin-top: $space-xl;
+
+        img {
+            width: 60px;
+        }
+
+        h3 {
+            font-size: $font-size-lg;
+            margin: $space-sm 0;
+        }
+
+        p {
+            font-size: $font-size-sm;
+            color: $blue-grey-dark;
+        }
+    }
+}
