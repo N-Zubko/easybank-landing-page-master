@@ -26,7 +26,7 @@
     }
   }
 
-    // Tablet LG
+    // Tablet Lg
     @mixin tablet-lg {
         @media (min-width: $tablet-lg) {
           @content;
