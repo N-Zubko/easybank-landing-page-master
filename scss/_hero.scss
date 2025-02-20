@@ -2,25 +2,13 @@
     background-color: $grey-lightest;  
     position: relative;
     overflow-x: clip;
-    
-    .mockups{
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 0;
-        max-height: 400px;
-        @include tablet-lg {
-            right: -50px;
-            max-height: 700px;
-        }
-    }
 
     .image-sliver {
         background-image: url('../images/bg-intro-mobile.svg');
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 100%;
         background-position: left;
-        min-height: 300px; 
+        min-height: 400px; 
         z-index: 0;
 
         @include tablet-lg {
@@ -34,23 +22,55 @@
             height: 600px;
         }
     }
+
+    .mockups {
+        position: absolute;
+        top: -50px;
+        left: 50%;
+        transform : translateX(-50%);
+        z-index: 0;
+        max-width: 380px;
+
+        @include tablet {
+            max-width: 380px;
+        }
+        @include tablet-lg {
+            top: -50px;
+            left: auto;
+            right: -50px;
+            max-width: 600px;
+            transform: none;
+        }
+    }
+
     .container-text {
         height: 500px;
         position: relative;
         z-index: 0;
         display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
+            justify-content: flex-start;
             gap: $space-md;
         filter: invert(1);
         mix-blend-mode: difference;
         padding-top: $space-lg;
 
+        h1, 
+        p {
+            text-align: center;
+        }
+
         @include tablet-lg {
             align-items: flex-start;
             max-width: 45%;
             min-height: 600px;
+            justify-content: center;
+
+            h1,
+            p {
+                text-align: left;
+            }
 
             p {
                 max-width: 90%;
