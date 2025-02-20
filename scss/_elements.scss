@@ -44,70 +44,47 @@
 
 }
 
-// Hamburger button styling
-.hamburger-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 30px;
-    height: 25px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    z-index: 100;
-    transition: transform 0.3s ease;
-
-    .bar {
-        width: 100%;
-        height: 2px;
-        background-color: $blue-grey;
-        transition: all 0.3s ease;
-    }
-
-    &:focus {
-        outline: none;
-    }
-
-    // Active state for hamburger
-    &.active {
-        transform: rotate(90deg);
-
-        .bar:nth-child(1) {
-            transform: rotate(45deg) translate(5px, 5px);
-        }
-
-        .bar:nth-child(2) {
-            opacity: 0;
-        }
-
-        .bar:nth-child(3) {
-            transform: rotate(-45deg) translate(5px, -5px);
-        }
-    }
-}
-
-
 // Cards
 
 .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: $space-md;
+    margin-top: $space-lg;  
+
+
     .card {
+        height: 100%;
         .card-inner {
+            height: 100%;
+            background-color: $white;
+
             .card-media {
+            overflow: hidden;
                 img {
+                    object-fit: cover;
+                    max-height: 200px;
                     width: 100%;
+                    border-top-left-radius: $border-radius;
+                    border-top-right-radius: $border-radius;
                 }
             }
             .card-content {
-                .card-pretitle {
+                padding: $space-md;
 
+                .card-pretitle {
+                    font-size: $font-size-xs;
+                    color: $blue-grey;
                 }
 
                 h3 {
+                    font-size: $font-size-lg;
+                    line-height: 1.1;
+                    margin: $space-sm 0;
 
                 }
                 .card-text {
-
+                    color: $blue-grey-dark;
                 }
             }
         }
