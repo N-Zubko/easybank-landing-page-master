@@ -1,5 +1,61 @@
-.hero {
-    background-image: url('../images/bg-intro-mobile.svg');
-    background-repeat: no-repeat;
-    background-size: cover;    
+.hero {  
+    background-color: $grey-lightest;  
+    position: relative;
+    overflow-x: clip;
+    
+    .mockups{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 0;
+        max-height: 400px;
+        @include tablet-lg {
+            right: -50px;
+            max-height: 700px;
+        }
+    }
+
+    .image-sliver {
+        background-image: url('../images/bg-intro-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left;
+        min-height: 300px; 
+        z-index: 0;
+
+        @include tablet-lg {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            background-image: url('../images/bg-intro-desktop.svg');
+            background-position: right 50%;
+            background-size: 55%;
+            height: 600px;
+        }
+    }
+    .container-text {
+        height: 500px;
+        position: relative;
+        z-index: 0;
+        display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: $space-md;
+        filter: invert(1);
+        mix-blend-mode: difference;
+        padding-top: $space-lg;
+
+        @include tablet-lg {
+            align-items: flex-start;
+            max-width: 45%;
+            min-height: 600px;
+
+            p {
+                max-width: 90%;
+            }
+        }
+    }
 }
+
