@@ -1,4 +1,14 @@
 .articles {
     background-color: $grey-lightest;  
     padding: $space-xxl 0;
+
+    h2 {
+        text-align: center;
+        margin-bottom: $space-sm;
+
+        @include tablet-lg {
+            text-align: left;
+            margin-bottom: $space-lg;
+        }
+    }
 }
