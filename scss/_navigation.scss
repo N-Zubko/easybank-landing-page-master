@@ -1,4 +1,7 @@
 nav {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
     background-color: $white;
     padding-top: $space-sm;
     padding-bottom: $space-sm;
@@ -21,13 +24,6 @@ nav {
     ul {
         gap: $space-md;
         list-style: none;
-
-        li {
-            a {
-                color: $blue-grey;
-                text-decoration: none;
-            }
-        }
     }
 
     .hamburger-menu {
