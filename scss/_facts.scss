@@ -1,6 +1,6 @@
 .facts {
     background-color: $blue-grey-light;
-    padding: $space-xxl 0;
+    padding: $space-lg 0;
 
     h2, .subtitle {
         text-align: center;
@@ -11,6 +11,7 @@
     }
 
     @include tablet-lg {
+        padding: $space-xxl 0;       
 
         h2, 
         .subtitle {
