@@ -1,7 +1,16 @@
-.hero {  
+.hero-home {  
     background-color: $grey-lightest;  
     position: relative;
     overflow-x: clip;
+    max-height: 850px;
+
+    @include mobile-lg {
+        max-height: 750px;
+    }
+
+    @include tablet-lg {
+        max-height: initial;
+    }
 
     .image-sliver {
         background-image: url('../images/bg-intro-mobile.svg');
