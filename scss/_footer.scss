@@ -28,6 +28,30 @@ footer {
 
     }
 
+    .media-container {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        gap: $space-sm;
+    }
+
+    .social-media {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+
+        svg {
+            fill: $white;
+        }
+        a {
+            &:hover {
+                svg {
+                    fill: $green;
+                }
+            }
+        }
+    }
+
     .logo-container {
         background: white;
         padding: 10px 10px 3px 7px;

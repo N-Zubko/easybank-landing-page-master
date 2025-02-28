@@ -39,7 +39,7 @@
         text-decoration-line: underline;
         text-decoration-thickness: 4px;
         text-decoration-color: $green;
-        text-underline-offset: $space-md;
+        text-underline-offset: $space-sm;
     }
 
 }
@@ -48,7 +48,7 @@
 
 .cards-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(285px, 1fr));
     gap: $space-md;
     margin-top: $space-lg;  
 
