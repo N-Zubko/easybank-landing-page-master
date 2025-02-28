@@ -1,4 +1,56 @@
 footer {
     background-color: $blue-dark;
     color: $white;
+    .container-xxl,
+    .media-container,
+    .footer-nav>ul,
+    .cta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-xxl {
+        padding: $space-lg 0;
+    }
+
+    @include tablet-lg {
+        .container-xxl,
+        .media-container,
+        .footer-nav>ul,
+        .cta {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .container-xxl {
+            padding: $space-xxl 0;
+        }
+
+    }
+
+    .logo-container {
+        background: white;
+        padding: 10px 10px 3px 7px;
+        border-radius: 5px;
+        img {
+            height: 25px;
+        }
+    }
+    .footer-nav {
+        ul {
+            margin: $space-md 0;
+            gap: $space-xs;
+        }
+        a {
+            color: $blue-grey-light;
+            text-decoration: none;
+        }
+    }
+
+    .cta {
+        span {
+            color: $blue-grey;
+            margin-top: $space-md;
+        }
+    }
 }
