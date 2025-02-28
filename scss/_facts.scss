@@ -25,9 +25,9 @@
 
     ul {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
         gap: $space-md;
-        padding: $space-lg $space-md;
+        padding: $space-lg 0;
 
         img {
             width: 60px;
@@ -49,6 +49,13 @@
             align-items: center;
             p {
                 text-align: center;
+            }
+
+            @include tablet-lg {
+                align-items: flex-start;
+                p {
+                    text-align: left;
+                }
             }
         }
     }
