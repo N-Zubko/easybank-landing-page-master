@@ -37,11 +37,16 @@ nav {
         align-items: center;
         background-color: $white;
         padding: $space-md 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 3s ease, visibility 3s ease;
 
-        &.active{
+        &.active {
             display: flex;
-            transition: all 2s ease;
+            opacity: 1;
+            visibility: visible;
         }
+    
 
         @include tablet {
             width: calc(100% - #{$space-xxl* 2});
@@ -124,9 +129,13 @@ nav {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 50;
     display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 3s ease, visibility 3s ease;
 
     &.active {
         display: block;
-        transition: all 3s ease;
+        opacity: 1;
+        visibility: visible;
     }
 }
