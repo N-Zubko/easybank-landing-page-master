@@ -5,7 +5,7 @@ document.querySelector('.hamburger-menu').addEventListener('click', function() {
   if (this.classList.contains('active')) {
     document.querySelector('body').setAttribute('style', 'overflow: hidden');
   } else {
-    document.querySelector('body').removeAttribute('style');
+    document.querySelector('body').removeAttribute('style'); 
   }
 });
   
