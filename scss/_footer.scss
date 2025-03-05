@@ -13,8 +13,7 @@ footer {
         padding: $space-lg 0;
     }
 
-    @include tablet-lg {
-        .container-xxl,
+    @include tablet {
         .media-container,
         .footer-nav>ul,
         .cta {
@@ -23,9 +22,17 @@ footer {
             align-items: flex-start;
         }
         .container-xxl {
-            padding: $space-xxl 0;
+            padding: $space-xl $space-md;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: flex-start;
         }
+    }
 
+    @include tablet-lg {
+        .container-xxl {
+            gap: $space-md;
+        }
     }
 
     .media-container {
@@ -33,6 +40,7 @@ footer {
         flex-direction: column;
         justify-items: center;
         gap: $space-sm;
+        min-height: 100px;
     }
 
     .social-media {
@@ -62,16 +70,49 @@ footer {
     }
     .footer-nav {
         ul {
-            margin: $space-md 0;
+            margin: $space-sm 0 $space-md;
             gap: $space-xs;
+            flex-wrap: wrap;
+
+            li {
+                width: 100%;
+                text-align: center;
+            }
         }
         a {
             color: $blue-grey-light;
             text-decoration: none;
         }
+
+        @include tablet {
+            margin-left: $space-md; 
+            ul {
+                margin: 0;
+                gap: 0;
+                padding-left: $space-sm;
+                padding-right: $space-sm;
+                max-width: 300px;    
+
+                li {
+                    width: 50%;
+                    padding-bottom: $space-xs;
+                    text-align: left;
+                }
+            }
+        }
+
+        @include tablet-lg {
+            ul {
+                margin: 0;
+                padding-left: $space-md;
+                padding-right: $space-md;
+                max-width: inherit;
+            }
+        }
     }
 
     .cta {
+        flex-direction: column;
         span {
             color: $blue-grey;
             margin-top: $space-md;
