@@ -11,8 +11,8 @@ The implementation allowed me to refine my SCSS and HTML expertise and demonstra
 ## Features
 
 - Fully responsive layout that adapts to all screen sizes
-- Accessible navigation with proper ARIA attributes
-- Interactive elements with appropriate hover states
+- Accessible with proper ARIA attributes and contrast ratio
+- Interactive elements with appropriate hover states: links, cards
 - Modern design with clean typography and imagery
 
 ## Technologies Used
@@ -29,6 +29,19 @@ The implementation allowed me to refine my SCSS and HTML expertise and demonstra
 
 ## Screenshots
 
+### Wide Desktop (1900px)
+
+![127 0 0 1_5500_ (1)](https://github.com/user-attachments/assets/8cfaab69-fe61-41d1-b602-6763bdb5c444)
+
+### Tablet (Ipad Air)
+
+![127 0 0 1_5500_(iPad Air) (1)](https://github.com/user-attachments/assets/a4c231dd-9a63-4068-9342-14202bbc785b)
+
+### Mobile (iPhone 14 Pro Max)
+
+![127 0 0 1_5500_(iPhone 14 Pro Max) (1)](https://github.com/user-attachments/assets/079cddc8-cfd4-4fbd-aaa1-ca5a5682bddc)
+
+![127 0 0 1_5500_(iPhone 14 Pro Max)](https://github.com/user-attachments/assets/2c4d7e70-bb8e-4ef7-9044-fb75a66f3132)
 
 ## Frontend Mentor
 
