@@ -160,6 +160,8 @@ input {
 .cards-container .card .card-inner {
   height: 100%;
   background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.6s ease;
 }
 .cards-container .card .card-inner .card-media {
   overflow: hidden;
@@ -170,21 +172,30 @@ input {
   width: 100%;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  transition: transform 0.6s ease;
 }
 .cards-container .card .card-inner .card-content {
   padding: 2rem;
+  transition: all 0.3s ease;
 }
 .cards-container .card .card-inner .card-content .card-pretitle {
   font-size: 1rem;
-  color: hsl(233, 8%, 62%);
+  color: hsl(235, 5%, 45%);
 }
 .cards-container .card .card-inner .card-content h3 {
   font-size: 1.5rem;
+  color: hsl(233, 26%, 24%);
   line-height: 1.1;
   margin: 1rem 0;
 }
 .cards-container .card .card-inner .card-content .card-text {
   color: hsl(235, 5%, 45%);
+}
+.cards-container .card .card-inner:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.cards-container .card .card-inner:hover img {
+  transform: scale(1.1);
 }
 
 body {
@@ -243,12 +254,14 @@ nav {
   background-color: hsl(0, 0%, 100%);
   padding-top: 1rem;
   padding-bottom: 1rem;
-  position: relative;
+  box-shadow: 0 2px 2px hsl(220, 16%, 96%);
+  transition: background-color 0.3s ease;
 }
 nav .container-xxl {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 nav .btn {
   display: none;
@@ -434,6 +447,11 @@ footer .footer-nav a {
   color: hsl(220, 16%, 96%);
   text-decoration: none;
 }
+footer .footer-nav a:hover {
+  color: hsl(136, 65%, 51%);
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
 @media (min-width: 768px) {
   footer .footer-nav {
     margin-left: 2rem;
@@ -463,8 +481,9 @@ footer .cta {
   flex-direction: column;
 }
 footer .cta span {
-  color: hsl(233, 8%, 62%);
+  color: hsl(220, 16%, 96%);
   margin-top: 2rem;
+  opacity: 0.8;
 }
 
 .hero-home {
@@ -617,6 +636,9 @@ footer .cta span {
 .articles {
   background-color: hsl(0, 0%, 98%);
   padding: 6rem 0;
+}
+.articles a {
+  text-decoration: none;
 }
 .articles h2 {
   text-align: center;
