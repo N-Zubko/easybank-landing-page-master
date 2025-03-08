@@ -82,6 +82,11 @@ footer {
         a {
             color: $blue-grey-light;
             text-decoration: none;
+            &:hover {
+                color: $green;
+                text-decoration: underline;
+                text-underline-offset: 5px;
+            }
         }
 
         @include tablet {
@@ -114,8 +119,9 @@ footer {
     .cta {
         flex-direction: column;
         span {
-            color: $blue-grey;
+            color: $blue-grey-light;
             margin-top: $space-md;
+            opacity: 0.8;
         }
     }
 }

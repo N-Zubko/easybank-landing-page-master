@@ -5,12 +5,14 @@ nav {
     background-color: $white;
     padding-top: $space-sm;
     padding-bottom: $space-sm;
-    position: relative;
+    box-shadow: 0 2px 2px $blue-grey-light;
+    transition: background-color 0.3s ease;
 
     .container-xxl {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        position: relative;
     }
 
 
