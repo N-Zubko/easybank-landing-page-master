@@ -18,7 +18,7 @@ The implementation allowed me to refine my SCSS and HTML expertise and demonstra
 ## Technologies Used
 
 - HTML5
-- CSS3/SCSS
+- SCSS
 - JavaScript for interactive elements
 - Responsive design principles
 - Web Accessibility compliance
