@@ -25,7 +25,7 @@ The implementation allowed me to refine my SCSS and HTML expertise and demonstra
 
 ## Live Site
 
-[View the live site](#)
+[View the live site](https://nz-sample-bank-landing.netlify.app/)
 
 ## Screenshots
 
